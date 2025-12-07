@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net9.0-windows</TargetFramework>
+		<UseWPF>true</UseWPF>
+		<UseWindowsForms>true</UseWindowsForms>
+		<!-- for FolderBrowserDialog -->
+
+		<!-- single, portable exe -->
+		<PublishSingleFile>true</PublishSingleFile>
+		<SelfContained>true</SelfContained>
+		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
+
+		<!-- keep trimming OFF for WPF (avoids runtime breakage) -->
+		<PublishTrimmed>false</PublishTrimmed>
+
+		<!-- optional size/startup tweaks -->
+		<EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+		<IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+		<!-- <PublishReadyToRun>true</PublishReadyToRun> -->
+		<!-- optional: faster startup, bigger exe -->
+	</PropertyGroup>
+</Project>

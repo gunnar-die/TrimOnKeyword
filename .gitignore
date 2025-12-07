@@ -1,0 +1,31 @@
+# Build output
+bin/
+obj/
+[Bb]uild/
+[Rr]elease/
+[Dd]ebug/
+
+# VS settings
+.vs/
+*.user
+*.suo
+*.cache
+
+# Publish output
+publish/
+
+# NuGet
+packages/
+*.nupkg
+*.snk
+
+# Logs
+*.log
+
+# Single-file exe artifacts
+*.pdb
+*.ilk
+
+# Temp
+*.tmp
+*.temp
